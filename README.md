@@ -1,13 +1,13 @@
-================================================================================
-SETUP MISSING FILES (UNABLE TO UPLOAD TO GITHUB):
+--------------------------------------------------------------------------------
+*SETUP MISSING FILES (UNABLE TO UPLOAD TO GITHUB):*
 --------------------------------------------------------------------------------
 1. [swin_tiny_patch4_window7_224.pth] in ./pretrained_ckpt
 2. Add all [test_vol_h5] and [train_npz] cases in ./datasets/data/Synapse
 
 
 
-================================================================================
-WHAT'S BEEN OPTIMIZED:
+--------------------------------------------------------------------------------
+*WHAT'S BEEN OPTIMIZED:*
 --------------------------------------------------------------------------------
 1. LIGHTWEIGHT DATA AUGMENTATION (datasets/dataset_synapse.py)
    - Removed expensive ndimage.rotate (CPU bottleneck)
@@ -39,8 +39,8 @@ WHAT'S BEEN OPTIMIZED:
    - Optional: Can override any setting via train.sh
 
 
-================================================================================
-HOW TO USE - QUICK START
+--------------------------------------------------------------------------------
+*HOW TO USE - QUICK START*
 --------------------------------------------------------------------------------
 
 SIMPLE:
@@ -68,8 +68,8 @@ PARAMETERS:
     use_amp        : AMP level O0/O1/O2 (default: O1)
 
 
-================================================================================
-WHAT CHANGED IN EACH FILE
+--------------------------------------------------------------------------------
+*WHAT CHANGED IN EACH FILE*
 --------------------------------------------------------------------------------
 
 1. datasets/dataset_synapse.py
